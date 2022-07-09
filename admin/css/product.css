@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* primary color#290149;
+secondary color  #80CBC4;*/
+::-webkit-scrollbar {
+  width: 1px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+body{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+.background{
+    background-color: #290149;
+    color: white;
+    font-weight: bold;
+}
+.col-sm-4 .background:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:  white;
+    color: red;
+}
+.col-1 .background:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:  white;
+    color: red;
+
+}
+.product_disc{
+    width: 20%;
+}
+table{
+    font-size: 14px;
+}
+th, td{
+    padding: 8px 5px !important;
+}
+
+td img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(202, 202, 202);
+}
+.table .far{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+}
+.edit{
+    width: 8%;
+}
+.fa-edit{
+    text-decoration: none;
+}
+.fa-times{
+    opacity: 0.5;
+}
+.fa-times:hover{
+    opacity: 1;
+}
+.fa-info-circle{
+    text-decoration: none;
+}
+/* for model */
+ .modal-backdrop {background: none;}
+ .modal{background: none;}
+ .active{
+     padding: 6px 12px;
+     background-color: #290149;
+     color: aliceblue;
+ }
+.orderdetail_img{
+    width: 400px;
+}

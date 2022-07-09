@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+   <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/cart.css">
+ </head>
+<body>
+
+    <div class="container mt-4 mb-4">
+        <div class="row role-heading">
+            <div class="col-12">
+                <h3>
+                    Your Cart
+                </h3>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 ">
+            <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Photo</th>
+                <th scope="col" class="quantity">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+                <th scope="col">Cancel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Sari</th>
+                <td><img class="cart-img" src="images/62da8964257e2d270ce18b4bb666ec53.jpg" alt="" ></td>
+                <td class="quantity">
+                    <div >
+                        <button class="sub">-</button>
+						<input type="text" readonly class="qtyBox"  min="1" max="10" value="1">
+						<button class="add">+</button>
+                    </div>
+                </td>
+                <td>Rs. 500</td>
+                <td><input type="text" class="totalBox" readonly value="" ></td>
+                <td> <button type="submit" class="c-cancel-button"><i class="fas fa-times"></i></button></td>
+                </tr>
+                
+                
+            </tbody>
+            </table>
+        </div>
+        <div class="col-md-4 p-0">
+            <div class="row ">
+                <div class="row checkout">
+                    <div class="col-12">
+                        <h5>Order Summery</h5>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="row border-for-checkout">
+                            <div class="col-8">
+                                <p>Sub Total</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Rs 3000</p>
+                            </div>
+                            <div class="col-8">
+                                <p class="m-0">Shipping Charge</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Free</p>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <h6 >TOTAL</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6>Rs 3000</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 check-out-button">
+                    <a href="">Check Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center mt-3 mb-3">
+            <a href="" class="btn-continue"> Continue Shopping</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- java scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+		// let addBtn = document.querySelector('#add');
+		// let subBtn = document.querySelector('#sub');
+		// let qty = document.querySelector('#qtyBox');
+		// let total = document.querySelector('#totalBox');
+		
+		// addBtn.addEventListener('click',()=>{
+		// 	qty.value = parseInt(qty.value) + 1;
+		// 	console.log(qty.value);
+		// });
+
+		// subBtn.addEventListener('click',()=>{
+		// 	if (qty.value <= 0) {
+		// 		qty.value = 0;
+		// 		console.log(qty.value);
+		// 	}
+		// 	else{
+		// 		qty.value = parseInt(qty.value) - 1;
+		// 		console.log(qty.value);
+		// 	}
+		// });
+$(document).ready(function(){
+    let quantity = parseInt($(".qtyBox").val());
+    $('.add').on('click', function() {
+    if(quantity >= 10){
+        quantity = 10;
+        $(".qtyBox").val(quantity);
+         $(".totalBox").val(quantity);
+    }else{
+        quantity = (quantity + 1);
+        $(".qtyBox").val(quantity);
+        $(".totalBox").val(quantity);
+        console.log(quantity);}
+});
+$('.sub').on('click', function() {
+    // do something
+    if(quantity <= 1){
+        quantity = 1;
+        $(".qtyBox").val(quantity);
+         $(".totalBox").val(quantity);
+    }else{
+        quantity = (quantity - 1);
+        $(".qtyBox").val(quantity);
+         $(".totalBox").val(quantity);
+        console.log(quantity);
+    }
+    
+});
+
+});
+
+
+
+	</script>
+  </body>
+</html>

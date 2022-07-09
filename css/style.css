@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+del{
+    text-decoration: line-through;
+}
+
+/* body{
+  background-color: #290149;
+} */
+.header{
+    width: 100%;
+    /* background-color: #eae9eb; */
+}
+.brand{
+    text-align: center;
+}
+.brand a{
+    text-decoration: none;
+    color:#290149;
+}
+.nav-links a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 23%;
+    color:#190727;
+    font-size: 16px;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-links a:hover{
+    color: rgb(35, 10, 65);
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition:opacity 1s
+}
+.dropdown-menu a{
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+}
+.dropdown-menu a:hover{
+    width: 100%;
+    background-color: #dfc4f5;
+    border-radius: 0;
+    font-weight: lighter;
+    
+}
+#dropdownMenuLink{
+    margin-right: 20px;
+}
+.search_form{
+    width: 100%;
+    margin-top: 7px;
+    padding: 0;
+}
+/*.search_form input{
+    border-radius: 0;
+    width: 75%;
+    border: 1px solid gray;
+    outline: none;
+}
+.search_form button{
+    border: none;
+    background: transparent;
+}
+.search_form button i{
+    font-size: 23px;
+    color:#190727;
+}
+*/
+.search_item{
+    border: 1px solid #290149;
+    border-radius: 3px;
+}
+.search_item input{
+    outline: none;
+    width: 75%;
+}
+.search_item input:focus{
+    background-color: transparent;
+}
+.search_item_btn{
+    margin-top: 4px;
+    border: none;
+    background: transparent;
+    outline: none;
+
+}
+.search_item_btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.search_item_btn i{
+    font-size: 23px;
+    color:#290149;
+}
+.cart{
+    padding: 6px;
+    position: relative;
+}
+.cart a{
+    text-decoration: none;
+    color: #290149;
+    font-size: 23px;
+}
+.badge{
+    text-align: center;
+    padding: 3px 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 3px;
+    color: white;
+    left: 15px;
+    font-size: 12px;
+    position: absolute;
+}
+
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    .brand{
+        padding-left: 0;
+    }
+  .brand-title {
+    font-size: 30px;
+  }
+  .fa-dolly{
+      font-size: 30px;
+  }
+  .nav-links a{
+      font-size: 15px;
+  }
+  .search_form input{
+    width: 55%;
+    padding: 3px;
+    }
+.cart{
+    padding: 13px 0 0;
+}
+.cart a, .search_form button i{
+    font-size: 16px;
+}
+
+}
+
+/* responsive for mobile nav */
+@media screen and (min-width: 786px){
+    .mobile-nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 786px){
+    .desktop-nav{
+        display: none;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .brand{
+        padding: 8px 0 0 0 ;
+    }
+    .brand-title {
+        font-size: 25px;
+    }
+    .search_form{
+        padding: 5px 0 0 0 ;
+    }
+    .search_form input{
+    width: 100%;
+    padding: 1px;
+    }
+    .nav-links a{
+    display: block;
+    text-align: left;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    }
+    .nav-links a:hover{
+        border-bottom: 2px solid #290149;
+        border-radius: 0;
+    }
+
+
+}
+.hide-nav-links {
+    border-top: 1px solid gray;
+    display: none;
+}
+.bars{
+    padding: 15px 0 0 30px;
+}
+.bars button{
+    background-color: transparent;
+    border: none;
+    color: #190727;
+    font-size: 18px;
+}
+.small-cart{
+    color: #19022c;
+    position: relative;
+    text-align: right;
+   
+}
+.small-cart a{
+    color: #19022c;
+    margin: 0 10px 0 0;
+}
+.cart-profile{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin:auto;
+    padding: 10px;
+    
+}
+.small-badge{
+    text-align: center;
+    padding: 3px 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0;
+    position: absolute;
+    color: white;
+    font-size: 8px;margin-right: 5px;
+}
+
+

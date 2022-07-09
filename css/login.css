@@ -1,0 +1,135 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body{
+  background-color: #290149;
+} */
+.form{
+    background-color: #cbb9da;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 3px;
+}
+.form h4{
+    text-align: center;
+    padding: 10px;
+    color: #424242;
+}
+form{
+    padding: 10px 0px;
+}
+label{
+    padding:0;
+    color: #353535;
+    font-size: 15px;
+}
+.LRform input[type=email] ,.LRform  input[type=date],.LRform  input[type=text] ,.LRform  input[type=password],.LRform  textarea{
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    text-align: left;
+    position: relative;
+}
+input[type=submit]{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #390563;
+    color: white;
+    outline: none;
+}
+input[type=submit]:hover{
+    background-color: #290149;
+    color: white;
+}
+.login-p,.login-a{
+    font-size: 14px;
+}
+.login-p{
+    color: #353535;
+}
+a.login-a{
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+.login-a:hover{
+    text-decoration: none;
+}
+#passworddiv{ 
+    position: relative;
+}
+#showpass{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    color: gray;
+}
+#showpass:hover{
+    cursor: pointer;
+}
+.alert{
+  padding: 5px;
+  text-align: center;
+}
+.bg_error{
+  background-color: red;
+  color: white;
+}
+.bg_success{
+  background-color: green;
+  color: white;
+}
+
+@media screen and (max-width: 768px){
+    .LRform input[type=email] ,.LRform  input[type=date],.LRform  input[type=text] ,.LRform  input[type=password],.LRform  textarea{
+
+        padding: 5px;
+    }
+    .login-p,.login-a{
+    font-size: 13px;
+}
+label{
+    font-size: 14px;
+}
+}
+.login_google{
+    outline: none;
+    border-radius: 20px;
+    background-color: #F95235;
+}
+.login_google:hover{
+    outline: none;
+    background-color: #e1701a;
+}
+
+/*checkout page*/
+a#cash_on{
+    width: 100%;
+    display: block;
+    padding:  20px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    background-color: #290149;
+}
+#esewa{
+    padding:  20px;
+    background-color: #2b9213;
+
+}
+#esewa:hover{
+    background-color: #12550a;
+}

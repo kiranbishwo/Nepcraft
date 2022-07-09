@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    margin:0;
+    overflow: hidden;
+    background-color: black;
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    position: relative;
+    line-height: 45px;
+}
+.background{
+    background-color: transparent;
+    margin-top: 120px;
+    position: absolute;
+}
+.container{
+  position: relative;
+    z-index: 100;
+}
+#passworddiv{ 
+    position: relative;
+}
+#showpass{
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    color: gray;
+}
+#showpass:hover{
+    cursor: pointer;
+}
+input[type=email]:focus , input[type=password]:focus , .btn:focus, .btn:active{
+  box-shadow: none;
+}
+.alert{
+  padding: 5px;
+  text-align: center;
+}
+.bg_error{
+  background-color: red;
+  color: white;
+}
+.bg_success{
+  background-color: green;
+  color: white;
+}
+
+    canvas{
+      margin-bottom: 200px;
+      background: transparent;
+      width: 100%;
+      height: 100%;
+    }
+    /* #animate{
+      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      bottom: 35px;
+      left: calc(50% - 125px);
+      background: none;
+      color: white;
+      font-size: 30px;
+      font-family: arial;
+      text-align: center;
+      border: 1px solid white;
+      background: rgba(255,255,255,0.2);
+    } */
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  body{
+    background-color: #290149;
+}
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+/* body{
+  background-color: #290149;
+} */
+/* primary color#290149;
+secondary color  #80CBC4;*/
+::-webkit-scrollbar {
+  width: 1px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+.topnav, .topnav2{
+  background-color: #290149;
+}
+
+.nav-pills .nav-link {
+    color: white;
+    border-radius: .20rem;
+}
+.nav-pills .nav-link:hover{
+  opacity: 0.5;
+  transition: width 3s;
+}
+.fa{
+  font-size: 25px;
+}
+#button{
+  cursor: pointer;
+}
+#button:hover{
+  color: blue;
+}
+
+#icon{
+  padding: 10px ;
+  padding-right: 40px;
+  font-weight: lighter;
+}
+.sidenav{
+  display: none;
+}
+.small-col{
+  display: none;
+}
+#topnav-icon{
+    display: none;
+  }
+.navbar-toggler{
+  color: white;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    border-bottom: 3px solid red;
+    background-color: transparent;
+
+}
+
+/* mobile nav */
+.mobilenav , .mobile-nav{
+  display: none;
+}
+.mobilenav a i{
+  color: #290149;
+}
+.tab-content{
+  padding-top: 10px;
+}
+   
+.fa-sign-out{
+  text-decoration: none;
+  color: gray;
+}
+.fa-sign-out:hover{
+  color: red;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .shadow {
+    display: none;
+  }
+  #topnav-icon{
+    display: block;
+  }
+  
+  .small-col , div .topnav{
+    display: none;
+  }
+  .mobilenav , .mobile-nav{
+    display: block;
+  }
+  .tab-content{
+  padding: 10px 0;
+}
+}
